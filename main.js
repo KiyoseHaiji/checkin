@@ -33,7 +33,7 @@ const glados = async () => {
 const notify = async (contents) => {
   const token = process.env.NOTIFY
   if (!token || !contents) return
-  await fetch(`https://wxpusher.zjiecode.com/api/send/message`, {
+  await fetch(`http://www.pushplus.plus/send`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({
